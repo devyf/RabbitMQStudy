@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.fengye.springboot</groupId>
-    <artifactId>rabbitmq</artifactId>
+    <artifactId>springboot-order-rabbitmq-producer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot-order-rabbitmq-producer</name>
     <description>Demo project for Spring Boot</description>

@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  * @Date: 2021/4/16 15:49
  */
 @RabbitListener(queues = {"email.fanout.queue"})
-@Component
+//@Component
 public class FanoutEmailConsumer {
     @RabbitHandler
     public void reviceMessage(String message){

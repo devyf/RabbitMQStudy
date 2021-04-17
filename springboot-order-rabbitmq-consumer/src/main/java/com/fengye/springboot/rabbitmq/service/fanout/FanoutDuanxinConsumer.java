@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  */
 //通过@RabbitListener绑定队列接收消息
 @RabbitListener(queues = {"weixin.fanout.queue"})
-@Component
+//@Component
 public class FanoutDuanxinConsumer {
     //队列中的消息会通过@RabbitHandler注解注入到方法参数中，就可以获取到队列中的消息
     @RabbitHandler
