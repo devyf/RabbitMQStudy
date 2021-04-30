@@ -7,5 +7,5 @@ spring:
     username: admin
     password: admin
     virtual-host: /
-    host: 127.0.0.1
+    host: 101.37.32.137
     port: 5672

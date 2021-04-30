@@ -43,4 +43,26 @@ class RabbitmqApplicationTests {
             orderService.makeOrderTopic(userId, productId, num);
         }
     }
+
+    @Test
+    void ttlQueueTest() throws InterruptedException {
+        for (int i = 0; i < 11; i++) {
+            Thread.sleep(1000);
+            Long userId = 100L + i;
+            Long productId = 10001L + i;
+            int num = 1;
+            orderService.makeOrderTTLQueue(userId, productId, num);
+        }
+    }
+
+    @Test
+    void ttlMsgQueueTest() throws InterruptedException {
+        for (int i = 0; i < 3; i++) {
+            Thread.sleep(1000);
+            Long userId = 100L + i;
+            Long productId = 10001L + i;
+            int num = 1;
+            orderService.makeOrderTTLMsgQueue(userId, productId, num);
+        }
+    }
 }
